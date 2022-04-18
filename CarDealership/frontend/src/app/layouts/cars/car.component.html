@@ -1,0 +1,19 @@
+<mat-grid-list cols="5" class="cards" rowHeight="1:2.25" style="min-height: 800px;">
+  <mat-grid-tile class="right-tile" [colspan]="5"  style="min-height: 800px;">
+    <mat-card class="car-card">
+      <mat-card-title>Cars</mat-card-title>
+      
+      <mat-list style="margin-top: 2vh"></mat-list>
+        <mat-list-item class="list-item">
+          <mat-card class="cars-field" style="margin-top: 2vh" *ngFor="let car of cars">
+            <h2 style="align-items: center;">{{car.carProducer}} {{ car.carModel }}</h2>
+            <h3 class="attributes">Preis: {{ car.price }}</h3>
+            <button style="margin-top: 1vh" mat-raised-button color="primary" (click)="bookCar(car.carID)"><mat-icon>book</mat-icon>Book</button>
+            <br>
+            <button style="margin-top: 1vh" mat-raised-button color="primary" (click)="buyCar(car.carID)"><mat-icon>shopping_cart</mat-icon>Buy</button>
+          </mat-card>
+        </mat-list-item>
+      <mat-list style="margin-top: 2vh"></mat-list>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

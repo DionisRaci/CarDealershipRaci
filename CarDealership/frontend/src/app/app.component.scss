@@ -1,0 +1,76 @@
+.notes-card{
+  margin-right: 1vw;
+  width: 98%;
+  height: 98%;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.character-card{
+  margin: 1%;
+  width: 98%;
+  height: 98%;
+  position: relative;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.characters-field{
+  width: 200px;
+  margin-right: 20px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.left-tile{
+  margin-left: 1%;
+  margin-right: 1%;
+  height: available;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.right-tile{
+  margin-left: 1%;
+  margin-right: 1%;
+  align-self: stretch;
+  align-items: flex-start;
+  overflow: hidden;
+  height: available;
+}
+
+.cards{
+  width: 98%;
+  height: available;
+  position: relative;
+  overflow: hidden;
+}
+
+.attributes{
+  margin-top: -10px;
+  overflow: hidden;
+}
+
+.list-item {
+  cursor: pointer;
+  font-size: 1.25em;
+  width: auto;
+  overflow: hidden;
+}
+
+.list-item:hover {
+  transition-delay: 250ms;
+  transition-duration: 300ms;
+  border: 2px outset #961B00;
+  overflow: hidden;
+}
+
+.mat-list-item{
+  width: 200px;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.body {
+  overflow: hidden; /* Hide scrollbars */
+}

@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #8f3f46;">
+
+  <a class="navbar-brand" style="margin-left: 20px;">
+    <img src="..\assets\icons\CarDealer.png" width="150" height="50" alt="">
+  </a>
+
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="car">Cars</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bookedCars">Your Booked Cars</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <app-login-button style=""
+            *ngIf="(auth.isAuthenticated$ | async) === false"
+          ></app-login-button>
+          <app-logout-button
+            *ngIf="auth.isAuthenticated$ | async"
+          ></app-logout-button>
+        </a>
+      </li>
+    </ul>
+</div>
+</nav>
